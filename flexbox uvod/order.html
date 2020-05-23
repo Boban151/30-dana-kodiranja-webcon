@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex wrap</title>
+    <style>
+        .container {
+            max-width: 900px;
+            width: 100%;
+            margin: 30px auto;
+            outline: 1px solid red;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+/*            justify-content: center;*/
+            height: 800px;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: flex-start;
+        }
+        .flex-elemenat {
+            height: 100px;
+            flex: 0 0 150px;
+            font-size: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .prvi {
+            background: orange;
+            order: 0;
+
+        }
+        .drugi {
+            background: lightblue;
+            order: -2;
+
+        }
+        .treci {
+            background: violet;
+
+        }
+        .cetvrti {
+            background: tomato;
+
+        }
+        .peti {
+            background: turquoise;
+            order: -1;
+            
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="row">
+            <div class="flex-elemenat prvi">1</div>
+            <div class="flex-elemenat drugi">2</div>
+            <div class="flex-elemenat treci">3</div>
+            <div class="flex-elemenat cetvrti">4</div>
+            <div class="flex-elemenat peti">5</div>
+        </div>
+    </div>
+    
+</body>
+</html>

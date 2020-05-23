@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex wrap</title>
+    <style>
+        .container {
+            max-width: 900px;
+            width: 100%;
+            margin: 30px auto;
+            outline: 1px solid navy;
+        }
+        .row {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-wrap: wrap-reverse;
+        }
+        .flex-elemenat {
+            height: 100px;
+            width: 400px;
+            flex-grow: 1;
+        }
+        .prvi {
+            background: orange;
+        }
+        .drugi {
+            background: lightblue;
+        }
+        .treci {
+            background: violet;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="row">
+            <div class="flex-elemenat prvi">Prvi</div>
+            <div class="flex-elemenat drugi">Drugi</div>
+            <div class="flex-elemenat treci">Treci</div>
+        </div>
+    </div>
+    
+</body>
+</html>

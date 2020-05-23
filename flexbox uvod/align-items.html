@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex wrap</title>
+    <style>
+        .container {
+            max-width: 900px;
+            width: 100%;
+            margin: 30px auto;
+            outline: 1px solid red;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+/*            justify-content: center;*/
+            height: 800px;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: flex-start;
+        }
+        .flex-elemenat {
+            height: 100px;
+            flex: 0 0 150px;
+        }
+        .prvi {
+            background: orange;
+        }
+        .drugi {
+            background: lightblue;
+            align-self: center;
+        }
+        .treci {
+            background: violet;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="row">
+            <div class="flex-elemenat prvi">Prvi</div>
+            <div class="flex-elemenat drugi">Drugi</div>
+            <div class="flex-elemenat treci">Treci</div>
+        </div>
+    </div>
+    
+</body>
+</html>

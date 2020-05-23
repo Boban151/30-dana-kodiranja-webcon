@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex wrap</title>
+    <style>
+        .container {
+            max-width: 900px;
+            width: 100%;
+            margin: 30px auto;
+            outline: 1px solid navy;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .flex-elemenat {
+            height: 100px;
+            min-width: 200px;
+            flex-grow: 1;
+            flex: 1 1 200px;
+        }
+        .prvi {
+            background: orange;
+            flex-basis: 80px;
+        }
+        .drugi {
+            background: lightblue;
+            flex-basis: 120px;
+        }
+        .treci {
+            background: violet;
+            flex-basis: 160px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="row">
+            <div class="flex-elemenat prvi">Prvi</div>
+            <div class="flex-elemenat drugi">Drugi</div>
+            <div class="flex-elemenat treci">Treci</div>
+        </div>
+    </div>
+    
+</body>
+</html>
