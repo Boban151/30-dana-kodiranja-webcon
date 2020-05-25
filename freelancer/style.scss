@@ -117,12 +117,50 @@ section
     flex: 2;
     padding: 40px;
     height: 100vh;
+    overflow: scroll;
+    /***   about    ***/
     .about {
         button {
             @include btn;
             &:hover {
                 @include btn-hover;
             }
+        }
+        &::after {
+            @include line;
+        }
+    }
+    /***   portfolio    ***/
+    .portfolio {
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .col {
+                flex: 0 0 48%;
+                margin-top: 40px;
+                img {
+                    width: 100%;
+                    &:hover {
+                        opacity: .6;
+                        transition: $transition;
+                        transform: scale(1.1);
+                    }
+                }
+                h4 {
+                    font-size: 1.7rem;
+                    color: $pink;
+                }
+            }
+        }
+        button {
+            @include btn;
+            &:hover {
+                @include btn-hover;
+            }
+        }
+        &::after {
+            @include line;
         }
     }
 }
