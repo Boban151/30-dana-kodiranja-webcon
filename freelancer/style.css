@@ -192,7 +192,13 @@ section
   display: flex;
   flex-wrap: wrap;
   padding-right: 50px;
+  padding-top: 20px;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .main footer .row form {
+    padding-right: 0px;
+  }
 }
 .main footer .row form input {
   flex: 0 0 48%;
