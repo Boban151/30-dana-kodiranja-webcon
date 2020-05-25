@@ -49,6 +49,7 @@ body {
     color: $gray;
     line-height: 1.6;
     display: flex;
+    flex-wrap: wrap;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: $headings;
@@ -79,6 +80,13 @@ aside {
     flex-direction: column;
     padding-right: 60px;
     text-align: right;
+    @media(max-width: 768px) {
+        flex: 0 0 100%;
+        text-align: center;
+        align-items: center;
+        padding-right: 0;
+        height: 90vh;
+    }
     
     img {
         width: 40%;
@@ -118,6 +126,11 @@ section
     padding: 40px;
     height: 100vh;
     overflow: scroll;
+    
+    @media(max-width:768px) {
+        flex: 0 0 100%;
+        overflow: auto;
+    }
     /***   about    ***/
     .about {
         button {
@@ -139,6 +152,9 @@ section
             .col {
                 flex: 0 0 48%;
                 margin-top: 40px;
+                @media(max-width:768px) {
+                    flex: 0 0 100%;
+                }
                 img {
                     width: 100%;
                     &:hover {
@@ -181,6 +197,9 @@ section
                     margin-bottom: 10px;
                     border: none;
                     background: $lightGray;
+                    @media(max-width:768px) {
+                        flex: 0 0 100%;
+                    }
                 }
                 textarea {
                     flex: 0 0 100%;
@@ -207,6 +226,10 @@ section
                     list-style: none;
                     padding-left: 20px;
                     line-height: 2.5;
+                    @media(max-width: 768px) {
+                        padding-left: 0px;
+                        padding: 10px;
+                    }
                     li {
                         font-size: 1.2rem;
                         i {
@@ -223,6 +246,23 @@ section
 /************************
 R E S P O N S I V E
 ************************/
+//@media(max-width:768px) {
+//    body {
+//        flex-wrap: wrap;
+//    }
+//    aside {
+//        flex: 0 0 100%;
+//        text-align: center;
+//        align-items: center;
+//        padding-right: 0;
+//        height: 90vh;
+//        
+//    }
+//    .main {
+//        flex: 0 0 100%;
+//        overflow: auto;
+//    }
+//}
 
 
 

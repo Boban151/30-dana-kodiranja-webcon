@@ -19,6 +19,7 @@ body {
   color: #303633;
   line-height: 1.6;
   display: flex;
+  flex-wrap: wrap;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,6 +54,15 @@ aside {
   flex-direction: column;
   padding-right: 60px;
   text-align: right;
+}
+@media (max-width: 768px) {
+  aside {
+    flex: 0 0 100%;
+    text-align: center;
+    align-items: center;
+    padding-right: 0;
+    height: 90vh;
+  }
 }
 aside img {
   width: 40%;
@@ -92,6 +102,12 @@ section
   /***   portfolio    ***/
   /***   footer    ***/
 }
+@media (max-width: 768px) {
+  .main {
+    flex: 0 0 100%;
+    overflow: auto;
+  }
+}
 .main .about button {
   padding: 10px 40px;
   border: 2px solid #8bebcb;
@@ -123,6 +139,11 @@ section
 .main .portfolio .row .col {
   flex: 0 0 48%;
   margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .main .portfolio .row .col {
+    flex: 0 0 100%;
+  }
 }
 .main .portfolio .row .col img {
   width: 100%;
@@ -180,6 +201,11 @@ section
   border: none;
   background: #f2f2f2;
 }
+@media (max-width: 768px) {
+  .main footer .row form input {
+    flex: 0 0 100%;
+  }
+}
 .main footer .row form textarea {
   flex: 0 0 100%;
   padding: 10px;
@@ -214,6 +240,12 @@ section
   list-style: none;
   padding-left: 20px;
   line-height: 2.5;
+}
+@media (max-width: 768px) {
+  .main footer .row .contact ul {
+    padding-left: 0px;
+    padding: 10px;
+  }
 }
 .main footer .row .contact ul li {
   font-size: 1.2rem;
