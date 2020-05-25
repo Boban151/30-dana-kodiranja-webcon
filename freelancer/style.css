@@ -85,6 +85,23 @@ section
 ************************/
 .main {
   flex: 2;
+  padding: 40px;
+  height: 100vh;
+}
+.main .about button {
+  padding: 10px 40px;
+  border: 2px solid #8bebcb;
+  color: #8bebcb;
+  background: transparent;
+  margin-top: 30px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.main .about button:hover {
+  border: 2px solid #9c7a97;
+  cursor: pointer;
+  color: #9c7a97;
+  transition: 0.3s ease;
 }
 
 /************************
